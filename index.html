@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<pre><h1>
+    1) Write a program to rotate the array to right
+
+input:[2,6,12,50]
+input2:2
+output:
+[12,50,2,6]
+
+2) Write a program to find the count of palindromes in the given array.
+
+</h1></pre>
+
+    <script>
+//1st task By Methods
+let a = [2,6,12,50]
+c=a.slice(2,4)
+d= a.slice(0,2)
+
+console.log(c.concat(d))
+
+//1st task by loops withot methods
+
+let a2 = [2,3,4,5,6,7,9]
+rotatNum=4
+emp=[],pmp=[]
+
+for (i=0;i<a2.length;i++){
+    
+   if(i<(a2.length-rotatNnum)) {
+       emp[i]=a[i]
+   } else {
+       pmp[i-(a2.length-rotatNnum)]=a[i]
+   }
+    
+}
+console.log(emp)
+console.log(pmp)
+
+console.log(pmp.concat(emp))
+
+    </script>
+</body>
+</html>
